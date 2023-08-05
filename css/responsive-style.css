@@ -3,14 +3,49 @@
 }
 @media (max-width: 991px) {
   /* custom classas */
+  .text-content {
+    width: 100%;
+  }
+
   /* navbar */
+  .navigation-wrap .navbar-brand {
+    height: 3.8125rem;
+  }
+  .navigation-wrap {
+    text-align: center;
+    background-color: rgb(225, 225, 225, 0.6);
+  }
+  .navigation-wrap .nav-link {
+    line-height: 1.875re;
+  }
   /* banner */
+  .top-banner {
+    padding: 9.375rem 0 9.375rem;
+  }
+  /* explore-foods */
+  .explore-foods .card {
+    margin-bottom: 0.9rem;
+  }
   /* carousel */
 }
 @media (max-width: 767px) {
   /* custom css */
+  h1 {
+    font: size 2.8rem;
+  }
+  h2 {
+    font-size: 2rem;
+    line-height: 2.0625rem;
+  }
   /* top banner */
+  .top-banner {
+    padding: 10.875rem 0 9.375rem;
+  }
   /* story */
+  .story-section {
+    height: auto;
+    padding: 3rem 0;
+  }
   /* carousel */
   /* newslettar */
   /* footer */

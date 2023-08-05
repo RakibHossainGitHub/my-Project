@@ -46,13 +46,17 @@ body {
 }
 /* ====custom scrollbar==== */
 ::-webkit-scrollbar {
-  width: 0.625 !important;
+  width: 0.625rem !important;
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--white-color) !important;
+  background: linear-gradient(
+    rgb(0, 0, 0, 0.9),
+    var(--primary-color)
+  ) !important;
+  border-radius: 0 0 20px 20px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--primary-color) !important;
+  background: var(--black-color) !important;
 }
 /* ====custom css design==== */
 h1 {
@@ -172,23 +176,40 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   letter-spacing: 1px;
+  position: relative;
 }
+.nav-link::before {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+  height: 2px;
+  width: 0%;
+  background-color: var(--primary-color);
+  transition: all 3ms linear;
+}
+.nav-link:hover::before {
+  content: "";
+  width: 100%;
+  transition: all 300ms linear;
+}
+
 .navigation-wrap .main-btn {
   padding: 0.3125rem 1.4375rem;
   box-shadow: none;
   margin-left: 0.625rem;
 }
-.navigation-wrap-scroll-on {
+
+/* nav-on-scroll */
+.navigation-wrap.scroll-on {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--white-color);
-  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+  background: rgb(225, 225, 225, 0.6);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
   transition: all 0.15s ease-in-out 0s;
 }
-/* nav-on-scroll */
-
 /* ====top-banner==== */
 .top-banner {
   width: 100%;
@@ -207,3 +228,54 @@ p {
   text-transform: uppercase;
 }
 /*==== about-section==== */
+.about-section {
+  background: var(--white-color);
+}
+.about-section .card,
+.about-section .card img {
+  border-radius: 0.625rem;
+  height: 35rem;
+}
+.about-section .text-sec {
+  padding-left: 1rem;
+  margin-top: 2rem;
+}
+.food-type ul li {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 32px;
+  position: relative;
+  margin-left: 30px;
+}
+.story-section {
+  width: 100%;
+  height: 28.125rem;
+  background: url(../main-img/bg/bg3.jpg) no-repeat center;
+  background-size: cover;
+  padding-top: 100px;
+  text-align: center;
+}
+.story-section h2 {
+  color: var(--primary-color);
+}
+.explore-foods .card {
+  border: none;
+  background-color: transparent;
+  border-radius: 0.9375rem;
+}
+.explore-foods .card img {
+  border-radius: 0.9375rem;
+  object-fit: cover;
+}
+.explore-foods .card span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  padding-bottom: 1rem;
+  border-bottom: 0.0625rem solid #eee;
+}
+.explore-foods .card span del {
+  color: var(--text-gray);
+  margin-left: 0.5rem;
+}
