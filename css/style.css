@@ -279,3 +279,39 @@ p {
   color: var(--text-gray);
   margin-left: 0.5rem;
 }
+/* testimonial */
+.tastimonial-section {
+  background-color: var(--primary-color);
+}
+.tastimonial-section .carousel-item {
+  margin-top: 3rem;
+  padding: 10rem 3.125rem;
+  background-color: var(--white-color);
+  border-radius: 0.9375rem;
+  text-align: center;
+}
+.tastimonial-section .carousel-caption img {
+  max-width: 7rem;
+  border-radius: 50%;
+  padding: 0.3125rem;
+}
+.tastimonial-section .carousel-item .carousel-caption p {
+  line-height: 2.0625rem;
+  font-size: 1.3125rem;
+  padding: 0 11% 0.625rem;
+}
+.tastimonial-section .carousel-indicators {
+  bottom: -2.8125rem;
+}
+.tastimonial-section .carousel-indicators button {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  margin: right 1re;
+  opacity: 0.2;
+}
+.tastimonial-section .carousel-indicators button:focus {
+  opacity: 1;
+}
