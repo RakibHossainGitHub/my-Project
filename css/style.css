@@ -24,11 +24,13 @@ ol {
   margin: 0;
   padding: 0;
 }
-li{list-style: none;
-text-transform: capitalize;}
+li {
+  list-style: none;
+  text-transform: capitalize;
+}
 /*======== variadle======= */
 :root {
-  --primary-color:#2b7728 ;
+  --primary-color: #2b7728;
   --secondry-color: #d1d1d1;
   --third-color: #f98169;
   --white-color: #fff;
@@ -229,13 +231,14 @@ p {
   color: var(--white-color);
   text-transform: uppercase;
 }
-.counter-circle{
-  background:linear-gradient(#c44000, rgb(34, 33, 33));
-  border-radius: 50%;}
-.counter-circle-border{
+.counter-circle {
+  background: linear-gradient(#c44000, rgb(34, 33, 33));
   border-radius: 50%;
-  background-color:#3a7238;
-   /* rgb(172, 171, 171) */
+}
+.counter-circle-border {
+  border-radius: 50%;
+  background-color: #3a7238;
+  /* rgb(172, 171, 171) */
 }
 
 /*==== about-section==== */
@@ -327,11 +330,15 @@ p {
   opacity: 1;
 }
 /* contract-section */
-form{
-/* padding-left:5rem  !important; */
-margin-left:  10rem !important;
+form {
+  /* padding-left:5rem  !important; */
+  margin-left: 10rem !important;
 }
 /* footer-section */
-.footer-top{
-padding-top: 4rem;
+.footer-top {
+  padding-top: 4rem;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.8), rgba(225, 225, 225, 0.5)),
+    url(../main-img/bg/bg4.jpg);
+  background-position: center;
+  background-size: cover;
 }
