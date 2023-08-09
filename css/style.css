@@ -24,14 +24,16 @@ ol {
   margin: 0;
   padding: 0;
 }
+li{list-style: none;
+text-transform: capitalize;}
 /*======== variadle======= */
 :root {
-  --primary-color: #a82c48;
-  --secondry-color: #43121d;
+  --primary-color:#2b7728 ;
+  --secondry-color: #d1d1d1;
   --third-color: #f98169;
   --white-color: #fff;
-  --text-color: #272727;
-  --text-gray: #999;
+  --text-color: #141414;
+  --text-gray: #3a3a3a;
   --black-color: #000;
   --primary-font: "Roboto", sans-serif;
   --secondry-font: "Quicksand", sans-serif;
@@ -70,7 +72,7 @@ h2 {
   font-size: 2.25rem;
   text-transform: capitalize;
   font-family: var(--secondry-font);
-  color: var(--secondry-color);
+  color: var(--black-color);
   line-height: 3rem;
 }
 h4 {
@@ -90,7 +92,7 @@ h5 {
   margin-bottom: 0.5rem;
 }
 p {
-  color: var(--text-color);
+  color: var(--text-gray);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.75rem;
@@ -227,6 +229,15 @@ p {
   color: var(--white-color);
   text-transform: uppercase;
 }
+.counter-circle{
+  background:linear-gradient(#c44000, rgb(34, 33, 33));
+  border-radius: 50%;}
+.counter-circle-border{
+  border-radius: 50%;
+  background-color:#3a7238;
+   /* rgb(172, 171, 171) */
+}
+
 /*==== about-section==== */
 .about-section {
   background: var(--white-color);
@@ -314,4 +325,13 @@ p {
 }
 .tastimonial-section .carousel-indicators button:focus {
   opacity: 1;
+}
+/* contract-section */
+form{
+/* padding-left:5rem  !important; */
+margin-left:  10rem !important;
+}
+/* footer-section */
+.footer-top{
+padding-top: 4rem;
 }

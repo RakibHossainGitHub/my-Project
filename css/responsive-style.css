@@ -55,9 +55,10 @@
   /* newslettar */
   /* footer */
 }
+}
 @media (max-width: 330px) {
   /* carousel */
     .tastimonial-section .carousel-item{
     padding: 13rem 3.125rem;
-    }
-  }
+}
+}
